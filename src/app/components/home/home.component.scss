@@ -1,0 +1,48 @@
+@import "../../variables";
+@import url("https://fonts.googleapis.com/css?family=Francois+One&display=swap");
+
+.home-main {
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/assets/img/ff-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  form {
+    input {
+      height: 25px;
+      width: 200px;
+      margin-right: 10px;
+    }
+  }
+
+  .search {
+    width: 20px;
+    height: 20px;
+  }
+  
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+ 
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  border-top-color: $red;
+  animation: spinner .8s linear infinite;
+    }
+  }
+

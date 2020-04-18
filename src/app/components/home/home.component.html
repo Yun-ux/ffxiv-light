@@ -1,0 +1,8 @@
+<div class="content home-main">
+	<h1>Enter your name and find who you are</h1>
+	<form [formGroup]="usernameForm" (ngSubmit)="onSubmit(usernameForm.value)">
+		<input type="text" placeholder="first name" formControlName="firstName">
+		<input type="text" placeholder="last name" formControlName="lastName">
+		<button class="btn" type="submit" [class.spinner]="loading" (click)="save()">Search</button>
+	</form>
+</div>

@@ -1,0 +1,12 @@
+@import "../../../variables";
+
+a {
+  color: rgba($white, 0.8);
+  font-family: "Jupiter Pro";
+  text-decoration: none;
+  list-style-type: none;
+
+  &:hover {
+    color: rgba($white, 1);
+  }
+}

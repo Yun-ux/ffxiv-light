@@ -1,0 +1,17 @@
+<div class="content">
+	<form [formGroup] class="loginCard">
+		<h2>Login</h2>
+		<div>
+			<input type="text" placeholder="Username"/>
+		</div>
+
+		<div>
+			<input placeholder="Password"/>
+		</div>
+		<div>
+			<button class="btn">Login</button>
+		</div>
+		<p>Not a member ?</p>
+		<a [routerLink]="'/register'" class="register-btn">Register</a>
+	</form>
+</div>

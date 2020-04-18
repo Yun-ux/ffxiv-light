@@ -1,0 +1,33 @@
+<div class="content bg">
+<div class="flex justify-center">
+    <div class="w-full max-w-xs">
+        <h2>Register</h2>
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" [formGroup]="registerUserForm" (ngSubmit)="onSubmit()">
+                <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Username:
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" formControlName="userName" required>
+                </label>
+                </div>
+                <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2">
+                    Password:
+                    <input type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  formControlName="password" required>
+                </label>
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        E-mail:
+                        <input type="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  formControlName="email" required>
+                    </label>
+                </div>
+                <div class="flex items-center justify-between">    
+                <button class="btn" type="submit" [disabled]="!registerUserForm.valid">Submit</button>
+                <a class="inline-block align-baseline font-bold text-sm text-pink-500 hover:text-blue-800" href="#">
+                    Forgot Password?
+                </a>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+@import "../../variables";
+
+.bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/img/register-bg.jpg");
+  background-size: 100%;
+}
+h2 {
+  color: $white;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Jupiter Pro";
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.registerCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
