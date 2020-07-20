@@ -1,1 +1,42 @@
-<p>galery works!</p>
+<div class="content">
+    <div class="container pt-5">
+        <ngb-carousel *ngIf="images">
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[0]" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>Estinien</h3>
+                <p>So handsome.</p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[1]" alt="Random second slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>Yun catboy</h3>
+                <p>also handsome</p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+              <div class="picsum-img-wrapper">
+                <img [src]="images[2]" alt="Random third slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>Yuna bunnygirl</h3>
+                <p>Amazing</p>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                  <img [src]="images[3]" alt="Random third slide">
+                </div>
+                <div class="carousel-caption">
+                  <h3>Yuna catgirl</h3>
+                  <p>Beautiful.</p>
+                </div>
+              </ng-template>
+          </ngb-carousel>
+    </div>
+</div>

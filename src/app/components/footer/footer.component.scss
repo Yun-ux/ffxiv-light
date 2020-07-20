@@ -1,13 +1,15 @@
 @import "../../variables";
 
 div {
-   display: flex;
-    height: 100px;
-    background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  background-color: $black;
 
-    p {
-        color: $white;
-        align-self: center;
-        justify-content: center;
-    }
+  p {
+    color: $white;
+    align-self: center;
+    justify-content: center;
+  }
 }

@@ -1,4 +1,48 @@
 @import "../../variables";
-.classTitle {
-    background-color: $grey;
+
+.dps {
+  height: 89.6vh;
+  background-color: rgb(114, 40, 40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: rgb(165, 85, 85);
+  }
+}
+.heal {
+  height: 89.6vh;
+  background-color: rgba(55, 131, 61, 0.7);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: rgb(95, 202, 104);
+  }
+}
+.tank {
+  height: 89.6vh;
+  background-color: rgb(55, 73, 131);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: rgb(103, 115, 187);
+  }
+}
+
+img {
+  filter: blur(2px);
+  &:hover {
+    filter: blur(0px);
+  }
+}
+h2 {
+  color: white;
+  font-size: 55px;
+  font-family: "Jupiter Pro";
+}
+#text-hover {
+  color: black;
 }

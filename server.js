@@ -13,17 +13,15 @@ app.use(
   cors({
     origin: ["http://localhost:4200", "http://127.0.0.1:4200"],
     credentials: true,
-  }),
+  })
 );
 app.use(express.json());
 // Connect to the db
-app.post('/createaccount', function(request,response) {
-  MongoClient.connect("mongodb://localhost:27017/users",{useNewUrlParser: true, useUnifiedTopology: true}, function (err, dbMongo) {
-    let userName = req.query.userName;
-})
+// app.post('/createaccount', function(request,response) {
+//   MongoClient.connect("mongodb://localhost:27017/users",{useNewUrlParser: true, useUnifiedTopology: true}, function (err, dbMongo) {
+//     let userName = req.query.userName;
+// })
 
-
-  
 // Api request for hero name
 app.get("/character", (req, res) => {
   let firstName = req.query.firstName;

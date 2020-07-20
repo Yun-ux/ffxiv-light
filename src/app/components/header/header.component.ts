@@ -20,11 +20,7 @@ export class HeaderComponent implements OnInit {
       href: '/jobs'
     },
     {
-      name: 'Guides',
-      href: '/guides'
-    },
-    {
-      name: 'galery',
+      name: 'gallery',
       href: '/galery'
     },
     {

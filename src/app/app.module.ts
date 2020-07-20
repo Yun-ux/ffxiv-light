@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
@@ -20,6 +21,10 @@ import { NotFoundPageComponent } from './components/not-found-page/not-found-pag
 import { RegisterComponent } from './components/register/register.component';
 import { CharacterComponent } from './components/character/character.component';
 import { AuthGuardService } from 'src/_services/auth-guard.service';
+import { DpsComponent } from './components/classes/dps/dps.component';
+import { HealComponent } from './components/classes/heal/heal.component';
+import { TankComponent } from './components/classes/tank/tank.component';
+
 
 
 const appRoutes: Routes = [
@@ -31,6 +36,9 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'character', component: CharacterComponent },
+  { path: 'dps', component: DpsComponent},
+  { path: 'heal', component: HealComponent},
+  { path: 'tank', component: TankComponent},
   { path: '**', component: NotFoundPageComponent }
 
 ];
@@ -50,13 +58,20 @@ const appRoutes: Routes = [
     LoginComponent,
     NotFoundPageComponent,
     RegisterComponent,
-    CharacterComponent
+    CharacterComponent,
+    DpsComponent,
+    HealComponent,
+    TankComponent
+
+
+
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes),
     ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

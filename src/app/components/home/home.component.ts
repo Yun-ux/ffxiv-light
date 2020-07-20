@@ -22,8 +22,8 @@ export class HomeComponent implements OnInit {
     private characterService: CharacterService
   ) {
     this.usernameForm = this.formBuilder.group({
-      firstName: 'Yun',
-      lastName: 'Wyrmblood'
+      firstName: '',
+      lastName: ''
     });
   }
 
